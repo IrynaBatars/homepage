@@ -1,10 +1,343 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Résumé</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.svg"/>
 </head>
 <body>
-― Hello World! &#x1F609;
+<main>
+    <div class="resume">
+        <div class="container">
+            <div class="resume__block">
+                <h1 class="contact-info__header" title="But my husband call me 'Bulka'. You see? It is a destiny">Iryna
+                    Batar
+                </h1>
+                <h3 class="contact-info__sub-header" title="I hope, soon">FrontEnd Developer</h3>
+                <div class="contact_info_container fh">
+                    <div class="contact-info__block">
+                        <a href="#" rel="author" class="contact-info__item">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 384 512">
+                                    <path
+                                            d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span>Dnipro, Ukraine</span>
+                        </a>
+                        <a href="#" rel="author" class="contact-info__item activate__three-cat__block">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 512 512">
+                                    <path xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                          d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"/>
+                                </svg>
+                            </div>
+                            <span>Three cat owner</span>
+                        </a>
+                        <div class="three-cat__block"><img src="assets/cats.jpg" class="three-cat"
+                                                           alt="Three cat: Sonya, Fenya and Basil"></div>
+                        <a href="tel:+380962167533" rel="author" class="contact-info__item">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 512 512">
+                                    <path xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                          d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"/>
+                                </svg>
+                            </div>
+                            <span>+380(96)216-75-33</span>
+                        </a>
+                    </div>
+                    <div class="contact-info__block contact-info__block--center">
+                        <div class="contact-info__avatar" title="Jinx!!1!1"></div>
+                    </div>
+                    <div class="contact-info__block">
+                        <a href="https://www.linkedin.com/in/iryna-batar/" rel="author" class="contact-info__item"
+                           target="_blank">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 448 512">
+                                    <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span>irina-batars</span>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="author" class="contact-info__item"
+                           target="_blank">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 448 512">
+                                    <path xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                          d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+                                </svg>
+                            </div>
+                            <span>irina-batars</span>
+                        </a>
+                        <a href="mailto:irina.batars@gmail.com" rel="author" class="contact-info__item">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 512 512">
+                                    <path xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                          d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/>
+                                </svg>
+                            </div>
+                            <span>irina.batars</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="resume__block">
+                <div class="intro">
+                    <div class="intro__icon-wrapper">
+                        <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="intro__accordion">
+                        <div class="accordion">
+                            <p class="intro_text">
+                                Hi! I'm glad to see you on my own website/resume! I know, you want to know me better,
+                                but i have nothing exclusive: I'm 25 years old, live in Dnipro, and trying become a
+                                programmer. Oh, and if you notice in a contacts-block - I'm a three cat owner: Sonya,
+                                Fenya and Basil. That's all.
+                            </p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                Oh, you not enough. Okay, well: I have a lawyer degree (very common situation), but I
+                                have a Belarusian lawyer degree (not so common situation). Currently, I live in Dnipro,
+                                but I lived in Minsk for 8 years, and took my degree there. Juridical sphere - it is not
+                                about me. So i tried myself in different areas, and when I came to FrontEnd - I
+                                understood: "That's it!". Then, i recognized one more thing... Ops, I should not talk
+                                about this.</p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                No, I do not tell you this, cause it is an elder spell. And everyone who heard that
+                                spell never stayed same. Emm, but okay. I can tell you about something else, for
+                                example: I suppose, that I'm not so bad in HTML abd CSS, but I want to learn a lot new
+                                things and become a really good in it. Truly, I'm not so good in JavaScript, but I
+                                coding a lot, and read a lot, and watch a lot of videos about JavaScript, JQuery,
+                                Angular, etc., and spend a lot of time for studying. For example, today I recognized how
+                                accordion makes. So I try to be better, and some day I'll be the best (hope so).</p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                Your curiosity starts to scare me. Fine, I will tell you about my hobbies, but not about
+                                the spell! First of all, I love board games. No, right to say: "I LOVE BOARD GAMES". I
+                                have big enough collection: from classics ("Catan", "Karkassone", etc), to the geeky
+                                things ("War of the ring", "Terraforming Mars", etc.). I hope, I will play with my
+                                future colleagues, and they will like it. Second one: I like cycling, and while I was
+                                living in Minsk I was cycling every day. My own record - 55 kilometres per day. I was so
+                                tired, but it worth it. Unfortunatly, in Ukraine (espesialy in Dnipro) it is no
+                                opportunity for cycling. Without roads for bicycles it is too dangerous. I hope,
+                                someday, I'll move in some more cycling-friendly city. And the least, but not the last -
+                                it is reading. I read a lot. I almost ended "War and peace", and know what? I really
+                                like it. I don't know why everyone hate it. Everyone should try to read it.
+                            </p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                I think we should to stop. I almost told you everything important about me. If you need
+                                more information, just try find it in my resume. I pretty sure it is possible. Sorry,
+                                but no spells would be told!
+                            </p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                Please, stop.
+                            </p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                STOOOOOP! This is the end.
+                            </p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                I do not tell you the spell. And you have nothing to do with it.
+                            </p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                ...
+                            </p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                ...
+                            </p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                Nope...
+                            </p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                You won't leave me alone, will you?
+                            </p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                Fine! Fine. But you need to be ready!
+                            </p>
+                        </div>
+                        <div class="accordion panel">
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=Um5KYud9PMg" target="_blank"
+                                   class="panel__phrase">
+                                    "A wizard is never late, nor is he early. He arrives precisely when he means
+                                    to."
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="resume__block">
+                <div class="skills">
+                    <h3 class="skills__header">Skills</h3>
+                    <div class="skills__texts">
+                        <p class="skills__text">Html, Css and JS</p>
+                        <p class="skills__text" title="A little">Jquery, Angular</p>
+                        <p class="skills__text">Webpack, Babel, Jasmine</p>
+                        <p class="skills__text">Sass, Scss, Less</p>
+                        <p class="skills__text">Npm, Yarn</p>
+                        <p class="skills__text">Gulp, Grunt</p>
+                        <p class="skills__text">English, Russian, Ukrainian</p>
+                        <p class="skills__text" title="You see, I can do it too">Sleep</p>
+                        <p class="skills__text" title="You see, I can do it too">Eat</p>
+                        <p class="skills__text" title="You see, I can do it too">Mrrr</p>
+                        <p class="skills__text" title="You see, I can do it too">Meow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="resume__block">
+                <div class="main-info fh">
+                    <div class="experiences">
+                        <div class="experiences">
+                            <h3 class="experiences__header">Experience</h3>
+                            <div class="experiences__company">
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">Last half year</span>
+                                    <h3 class="experiences__company-header-name">Self-study</h3>
+                                    <span class="experiences__company-header-durability">jan 2020 - apr 2020</span>
+                                    <h3 class="experiences__company-header-name">Riviera SPA (Lawyer)</h3>
+                                    <span class="experiences__company-header-durability">may 2018 - jan 2020</span>
+                                    <h3 class="experiences__company-header-name">Radchenko K.I. (Сrisis manager)</h3>
+                                    <span class="experiences__company-header-durability">jan 2018 - apr 2018</span>
+                                    <h3 class="experiences__company-header-name">NCPI (Lawyer)</h3>
+                                    <span class="experiences__company-header-durability">mar 2013 - sep 2013</span>
+                                    <h3 class="experiences__company-header-name">Law Office (Lawyer)</h3>
+                                </div>
+                                <div class="experiences__company-project">
+                                    <span class="experiences__company-project-role">Self-study</span>
+                                    <h3 class="experiences__company-project-name">FronEnd</h3>
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>CS:50 - free online course</li>
+                                        <li>JS - books, videos, coding</li>
+                                        <li>HTML, CSS - few pages, which I made</li>
+                                        <li>Angular - try to make my own site</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="additional-info fv">
+                        <div class="additional-info fv">
+                            <div class="additional-info__education">
+                                <h3 class="additional-info__education-header">Self-study</h3>
+                                <div class="additional-info__education-university">
+                                    <span class="additional-info__education-university-durability">2021</span>
+                                    <h3 class="additional-info__education-university-speciality">FronEnd</h3>
+                                    <p class="additional-info__education-university-name">CS:50 - free online course</p>
+                                    <p class="additional-info__education-university-name">JS - books, videos, coding</p>
+                                    <p class="additional-info__education-university-name">HTML, CSS - few pages, which I
+                                        made</p>
+                                    <p class="additional-info__education-university-name">Angular - tried to made my own
+                                        website</p>
+                                </div>
+                                <div class="additional-info__education-university">
+                                    <h3 class="additional-info__education-university-speciality">Webpack +
+                                        npm(yarn)</h3>
+                                    <p class="additional-info__education-university-name">A lot of videos</p>
+                                    <p class="additional-info__education-university-name">A LOT of Google searching</p>
+                                    <p class="additional-info__education-university-name">Build and compile my own
+                                        project</p>
+                                    <p class="additional-info__education-university-name">Trying use it for fun</p>
+                                </div>
+                            </div>
+
+                            <div class="additional-info__languages">
+                                <h3 class="additional-info__languages-header">Languages</h3>
+                                <p class="additional-info__languages-item" title="But I learn it too, an some day...">
+                                    English (understand)
+                                </p>
+                                <p class="additional-info__languages-item">
+                                    Ukrainian (understand)
+                                </p>
+                                <p class="additional-info__languages-item">
+                                    Russian (speak)
+                                </p>
+                                <p class="additional-info__languages-item">
+                                    Belarusian (understand)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-gift">
+            <a href="https://www.youtube.com/watch?v=IZNmqR0z5xs" title="I obsess with this video" class="gift"
+               target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                     data-icon="gift" class="svg-inline--fa fa-gift fa-w-16" role="img" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                          d="M32 448c0 17.7 14.3 32 32 32h160V320H32v128zm256 32h160c17.7 0 32-14.3 32-32V320H288v160zm192-320h-42.1c6.2-12.1 10.1-25.5 10.1-40 0-48.5-39.5-88-88-88-41.6 0-68.5 21.3-103 68.3-34.5-47-61.4-68.3-103-68.3-48.5 0-88 39.5-88 88 0 14.5 3.8 27.9 10.1 40H32c-17.7 0-32 14.3-32 32v80c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-80c0-17.7-14.3-32-32-32zm-326.1 0c-22.1 0-40-17.9-40-40s17.9-40 40-40c19.9 0 34.6 3.3 86.1 80h-86.1zm206.1 0h-86.1c51.4-76.5 65.7-80 86.1-80 22.1 0 40 17.9 40 40s-17.9 40-40 40z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</main>
+
+<script>
+
+    let acc = document.getElementsByClassName("accordion");
+
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+
+            this.classList.toggle("active");
+            let panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+                if (panel.classList.contains("active")) {
+                    panel.click();
+                }
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+
+
+</script>
 </body>
 </html>
