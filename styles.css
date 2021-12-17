@@ -14,6 +14,8 @@ body {
     --icon-color: #6a737d;
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
+    --background-text-color: #ffebcd;
+    --hover-background-text-color: #fff2df;
 }
 
 .container {
@@ -35,6 +37,7 @@ body {
 }
 
 .resume {
+    position: relative;
     margin: 50px auto;
     border: 1px solid #f5f5f5;
     box-shadow: 1px 1px 7px 7px #f5f5f5;
@@ -89,6 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .contact-info__block--center {
@@ -122,6 +126,27 @@ body {
     vertical-align: text-bottom;
 }
 
+.three-cat__block {
+
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    left: 90%;
+    z-index: 1;
+}
+
+.three-cat {
+    border: 2px var(--border-color) solid;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.activate__three-cat__block:hover + .three-cat__block {
+    display: block;
+}
+
 .contact-info__avatar {
     border-radius: 50%;
     width: 100px;
@@ -129,6 +154,13 @@ body {
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
+    background: url("assets/avatar.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.contact-info__avatar:hover {
+    background: url("assets/avatar2.webp") no-repeat center center;
+    background-size: cover;
 }
 
 .intro {
@@ -157,15 +189,69 @@ body {
     text-align: justify;
 }
 
+.intro__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordion {
+    background-color: var(--background-text-color);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: var(--hover-background-text-color);
+}
+
+.panel {
+    padding: 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border: 2px var(--border-color) solid;
+}
+
+.panel__phrase {
+    text-decoration: none;
+    color: cadetblue;
+    font-weight: bold;
+}
+
+.panel__phrase:hover {
+    text-decoration: underline;
+}
+
 .skills__header {
     color: var(--secondary-text-color);
     text-align: center;
     margin-bottom: 15px;
 }
 
+.skills__texts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+}
+
 .skills__text {
+    padding: 5px 10px;
     color: var(--secondary-text-color);
     text-align: justify;
+    background-color: var(--background-text-color);
+}
+
+.skills__text:hover {
+    background-color: var(--hover-background-text-color);
+    cursor: default;
 }
 
 .experiences {
@@ -231,6 +317,10 @@ body {
     margin-bottom: 20px;
 }
 
+.additional-info__education-university {
+    margin: 10px 0;
+}
+
 .additional-info__education-university-durability {
     color: var(--durability-text-color);
     text-align: left;
@@ -260,4 +350,20 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.hidden-gift {
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.hidden-gift:hover .gift {
+    visibility: visible;
+}
+
+.gift {
+    visibility: hidden;
 }
